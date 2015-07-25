@@ -69,13 +69,13 @@
       text-align: center;
       margin: 0 @tab-padding;
       text-overflow: clip;
-      // To use a mask and keep sub-pixel AA: Also add an opaque bg + HWA layer
-      -webkit-mask: linear-gradient( to left, hsla(0,0%,0%,0), hsla(0,0%,0%,1) 1em) no-repeat;
       background-color: @tab-background-color;
       backface-visibility: hidden;
     }
     &:hover .title {
-      -webkit-mask-position: -@modified-icon-width 0;
+      // To use a mask and keep sub-pixel AA: Also add an opaque bg + HWA layer
+      -webkit-mask: linear-gradient( to right, hsla(0,0%,0%,0), hsla(0,0%,0%,1) 1em) no-repeat;
+      -webkit-mask-position: @modified-icon-width 0;
     }
     &.active .title {
       background-color: @tab-background-color-active;
@@ -86,12 +86,13 @@
 
     .close-icon {
       top: 0;
-      right: 0;
+      left: 0;
       z-index: 2;
-      padding: 0 @tab-padding/1.25;
+      margin: 0 @tab-padding/1.25;
+      padding: 0px 2px;
+      width: @modified-icon-width;
       height: @ui-tab-height;
       line-height: @ui-tab-height;
-      text-align: center;
       transform: scale(0);
       transition: transform .08s;
       &:hover {

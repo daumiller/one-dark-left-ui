@@ -1,15 +1,16 @@
 {
-  "name": "one-dark-ui",
+  "name": "one-dark-left-ui",
   "theme": "ui",
-  "version": "1.0.2",
-  "description": "Atom One dark UI theme",
+  "version": "1.0.2-left",
+  "description": "Atom One dark UI theme with left close",
   "keywords": [
     "dark",
     "adaptive",
-    "ui"
+    "ui",
+    "left"
   ],
   "license": "MIT",
-  "repository": "https://github.com/atom/one-dark-ui",
+  "repository": "https://github.com/daumiller/one-dark-ui-left",
   "main": "lib/settings",
   "engines": {
     "atom": ">0.40.0"
