@@ -10,7 +10,7 @@
     "left"
   ],
   "license": "MIT",
-  "repository": "https://github.com/daumiller/one-dark-ui-left",
+  "repository": "https://github.com/daumiller/one-dark-left-ui",
   "main": "lib/settings",
   "engines": {
     "atom": ">0.40.0"
